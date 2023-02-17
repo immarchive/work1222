@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안다르</title>
+
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</head>
+<body>
+
+    <!-- 최소 위드 -->
+    <div class="wrapper">
+
+        <!-- 서울시청 마크업 참고 후 작업 -->
+        <!-- <div class="skip-nav">
+            <a href="#main">본문내용 바로가기</a>
+        </div> -->
+
+        <!-- 사이드메뉴 -->
+        <div class="side-menu">
+            <div class="membership-area">
+                <a href="" class="btn login">로그인</a>
+                <a href="" class="btn join">회원가입</a>
+                <p>로그인 하고, <strong>회원 전용 혜택</strong> 확인하기</p>
+                <div class="btn-close"><span class="blind">메뉴닫기</span></div>
+            </div>
+            <div class="menu-area">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="" class="item point"><span>봄 신상</span></a>
+                        <span class="btn-open"></span>
+                        <ul class="sub-list">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">우먼즈</a></li>
+                            <li><a href="">맨즈</a></li>
+                            <li><a href="">홈트용품 & 액세서리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="item point"><span>베스트</span></a>
+                        <span class="btn-open"></span>
+                        <ul class="sub-list">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">우먼즈</a></li>
+                            <li><a href="">맨즈</a></li>
+                            <li><a href="">홈트용품 & 액세서리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="item"><span>우먼즈</span></a>
+                        <span class="btn-open"></span>
+                        <ul class="sub-list">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">우먼즈</a></li>
+                            <li><a href="">맨즈</a></li>
+                            <li><a href="">홈트용품 & 액세서리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="item "><span>맨즈</span></a>
+                        <span class="btn-open"></span>
+                        <ul class="sub-list">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">우먼즈</a></li>
+                            <li><a href="">맨즈</a></li>
+                            <li><a href="">홈트용품 & 액세서리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="item point"><span>릴레어 시리즈</span></a>
+                        <span class="btn-open"></span>
+                        <ul class="sub-list">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">우먼즈</a></li>
+                            <li><a href="">맨즈</a></li>
+                            <li><a href="">홈트용품 & 액세서리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="item"><span>아울렛</span></a>
+                        <span class="btn-open"></span>
+                        <ul class="sub-list">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">우먼즈</a></li>
+                            <li><a href="">맨즈</a></li>
+                            <li><a href="">홈트용품 & 액세서리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="item"><span>홈트용품 & 액세서리</span></a>
+                        <span class="btn-open"></span>
+                        <ul class="sub-list">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">우먼즈</a></li>
+                            <li><a href="">맨즈</a></li>
+                            <li><a href="">홈트용품 & 액세서리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="item"><span>서스테이너블</span></a>
+                        <span class="btn-open"></span>
+                        <ul class="sub-list">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">우먼즈</a></li>
+                            <li><a href="">맨즈</a></li>
+                            <li><a href="">홈트용품 & 액세서리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="item"><span>요기니 요가복</span></a>
+                        <span class="btn-open"></span>
+                        <ul class="sub-list">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">우먼즈</a></li>
+                            <li><a href="">맨즈</a></li>
+                            <li><a href="">홈트용품 & 액세서리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="item"><span>해외 골프투어</span></a>
+                        <span class="btn-open"></span>
+                        <ul class="sub-list">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">우먼즈</a></li>
+                            <li><a href="">맨즈</a></li>
+                            <li><a href="">홈트용품 & 액세서리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="service-area">
+                <ul class="service-list">
+                    <li class="service-item">
+                        <a href="">EVENT</a>
+                    </li>
+                    <li class="service-item">
+                        <a href="" class="item point"><span>고객지원</span></a>
+                        <span class="btn-open on"></span>
+                        <ul class="sub-list">
+                            <li><a href="">안다르 매거진</a></li>
+                            <li><a href="">안다르 스토어</a></li>
+                        </ul>
+                    </li>
+                    <li class="service-item">
+                        <a href="" class="item point"><span>안다르 스토리</span></a>
+                        <span class="btn-open on"></span>
+                        <ul class="sub-list">
+                            <li><a href="">안다르 매거진</a></li>
+                            <li><a href="">안다르 스토어</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="event-area">
+                <h2 class="headline">이벤트</h2>
+                <div class="item-box">
+                    <a href="">
+                        <img src="./assets/img/index-img/img-sidemenu-ev.jpg" alt>
+                        <em class="title">레깅스가 부담되는 날</em>
+                        <span class="desc">입는 순간 슬림한 조거팬츠</span>
+                        <span class="all">전체 →</span>
+                    </a>
+                </div>
+                <div class="brand-box">
+                    <a href="">브랜드 스토리</a>
+                    <a href="">전국매장안내</a>
+                </div>
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="gnb-inner on">
+                <nav class="gnb">
+                
+                    <h1 class="logo"><a href=""><span class="blind">안다르</span></a></h1>
+                
+                    <div class="col-left">
+                        <a href="" class="btn menu"><span class="blind">카테고리</span></a>
+                        <a href="" class="btn search"><span class="blind">검색</span></a>
+                    </div>
+                    <div class="col-right">
+                        <a href="" class="btn cart"><span class="blind">장바구니</span>
+                        <span class="count">0</span></a>
+                        <a href="" class="btn mypage"><span class="blind">마이페이지</span></a>
+                    </div>
+                </nav>
+                <div class="top-menu">
+                    <div class="category-area">
+                        <ul class="category-list">
+                            <li class="category-item point"><a href="">봄 신상</a></li>
+                            <li class="category-item point"><a href="">베스트</a></li>
+                            <li class="category-item"><a href="">우먼즈</a></li>
+                            <li class="category-item"><a href="">맨즈</a></li>
+                            <li class="category-item point"><a href="">릴레어</a></li>
+                            <li class="category-item"><a href="">아울렛</a></li>
+                        </ul>
+                        <p class="all">전체메뉴</p>
+                        <a href="" class="btn-more"><span class="blind">더보기</span></a>
+                    </div>
+                    <div class="sub-category-area">
+                        <ul class="sub-category-list">
+                            <li class="sub-category-item point"><a href="">봄 신상</a></li>
+                            <li class="sub-category-item point"><a href="">베스트</a></li>
+                            <li class="sub-category-item"><a href="">우먼즈</a></li>
+                            <li class="sub-category-item"><a href="">맨즈</a></li>
+                            <li class="sub-category-item point"><a href="">릴레어 시리즈</a></li>
+                            <li class="sub-category-item"><a href="">아울렛</a></li>
+                            <li class="sub-category-item"><a href="">홈트용품&액세서리</a></li>
+                            <li class="sub-category-item"><a href="">서스테이너블</a></li>
+                            <li class="sub-category-item"><a href="">요기니 요가복</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="container">
+            <!-- <section class="swiper main-slide">
+                <div class="swiper-wrapper">
+                    <ul class="swiper-slide">
+                        <li class="slide-item">
+                            <a href="">
+                                <img src="./assets/img/slide-img/slide-img-01.jpg" alt>
+                                <div class="text-box">
+                                    <strong class="title">에그레저 품질 1위,<br>안다르 시그니처 레깅스</strong>
+                                    <span class="desc">국내 유일, 라이크라 스포츠 인증을 받은 안다르의 레깅스를 지금 만나보세요</span>
+                                </div>
+                            </a>
+                            <a href="">
+                                <img src="./assets/img/slide-img/slide-img-01.jpg" alt>
+                                <div class="text-box">
+                                    <strong class="title">에그레저 품질 1위,<br>안다르 시그니처 레깅스</strong>
+                                    <span class="desc">국내 유일, 라이크라 스포츠 인증을 받은 안다르의 레깅스를 지금 만나보세요</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section> -->
+
+            <section class="sc-bestitem">
+                <h3 class="headline-sm">BEST</h3>
+                <ul class="bestitem-list">
+                    <li class="bestitem-item">
+                        <a href=""><img src="./assets/img/index-img/img-best-01.jpg" alt="[1+1] 에어쿨링 지니 시그니처 레깅스"></a>
+                        <div class="item-info">
+                            <em class="review">리뷰 114,337</em>
+                            <a href="" class="title">[1+1] 에어쿨링 지니 시그니처 레깅스</a>
+                            <strong class="sale">50%</strong>
+                            <span class="price">49,000원</span>
+                            <span class="cost">98,000원</span>
+                        </div>
+                        <div class="item-ranking">
+                            애슬래저 1위
+                        </div>
+                    </li>
+                    <li class="bestitem-item">
+                        <div class="image-wrap">
+                            <a href=""><img src="./assets/img/index-img/img-best-01.jpg" alt="[1+1] 에어쿨링 지니 시그니처 레깅스"></a>
+                            <em class="badge">
+                                <a href=""><img src="./assets/img/icon/ic-badge-new.png" alt=""><span class="blind">NEW</span></a>
+                            </em>
+                        </div>
+                        <div class="item-info">
+                            <em class="review">리뷰 114,337</em>
+                            <a href="" class="title">[1+1] 에어쿨링 지니 시그니처 레깅스</a>
+                            <strong class="sale">50%</strong>
+                            <span class="price">49,000원</span>
+                            <span class="cost">98,000원</span>
+                        </div>
+                    </li>
+                    <li class="bestitem-item">
+                        <div class="image-wrap">
+                            <a href=""><img src="./assets/img/index-img/img-best-01.jpg" alt="[1+1] 에어쿨링 지니 시그니처 레깅스"></a>
+                            <em class="badge">
+                                <a href=""><img src="./assets/img/icon/ic-badge-new.png" alt=""><span class="blind">NEW</span></a>
+                            </em>
+                        </div>
+                        <div class="item-info">
+                            <em class="review">리뷰 114,337</em>
+                            <a href="" class="title">[1+1] 에어쿨링 지니 시그니처 레깅스</a>
+                            <strong class="sale">50%</strong>
+                            <span class="price">49,000원</span>
+                            <span class="cost">98,000원</span>
+                        </div>
+                    </li>
+                    <li class="bestitem-item">
+                        <div class="image-wrap">
+                            <a href=""><img src="./assets/img/index-img/img-best-01.jpg" alt="[1+1] 에어쿨링 지니 시그니처 레깅스"></a>
+                            <em class="badge">
+                                <a href=""><img src="./assets/img/icon/ic-badge-new.png" alt=""><span class="blind">NEW</span></a>
+                            </em>
+                        </div>
+                        <div class="item-info">
+                            <em class="review">리뷰 114,337</em>
+                            <a href="" class="title">[1+1] 에어쿨링 지니 시그니처 레깅스</a>
+                            <strong class="sale">50%</strong>
+                            <span class="price">49,000원</span>
+                            <span class="cost">98,000원</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn-more">
+                    <a href="">BEST 더보기</a>
+                </div>
+            </section>
+
+            <section class="sc-event-banner">
+                <h2 class="blind">베스트상품</h2>
+                <a href=""><img src="./assets/img/index-img/img-event-coupon.jpg" alt="안다르가 처음이라면? 3천원 할인쿠폰 받기"></a>
+            </section>
+
+            <section class="sc-recomm">
+                <div class="recomm-wrap">
+                    <a href="" class="main-img"><img src="./assets/img/index-img/img-main.jpg" alt></a>
+                    <div class="group-title">
+                        <a href="">
+                            <h2 class="headline">특별한 가격으로 만나요,<br>한 벌일 때 더 완벽한 SET</h2>
+                            <span class="desc">퍼포먼스웨어부터 원마일웨어까지,<br>혜택을 놓치지 마세요.</span>
+                            <div class="btn-more">
+                                <span>보러가기</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="group-list">
+                        <ul class="recomm-list">
+                            <li class="recomm-item">
+                                <a href=""><img src="./assets/img/index-img/img-sub.jpg" alt></a>
+                                <div class="text-wrap">
+                                    <em class="review">리뷰 1,307</em>
+                                    <a href="" class="title">[SET] 피트니스 세트 (에어쿨링 핏 텐션 레깅스 & 에어터치 크롭탑)</a>
+                                    <div class="price-wrap">
+                                        <strong class="sale">32%</strong>
+                                        <span class="price">59,000원</span>
+                                        <span class="cost">88,000원</span>
+                                    </div>
+                                    <div class="ranking">
+                                        <span>애슬래저 1위</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="recomm-item">
+                                <a href=""><img src="./assets/img/index-img/img-sub.jpg" alt></a>
+                                <div class="text-wrap">
+                                    <em class="review">리뷰 1,307</em>
+                                    <a href="" class="title">[SET] 피트니스 세트 (에어쿨링 핏 텐션 레깅스 & 에어터치 크롭탑)</a>
+                                    <strong class="sale">32%</strong>
+                                    <span class="price">59,000원</span>
+                                    <span class="cost">88,000원</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- css 완성 후 한개 더 추가 -->
+            </section>
+
+            <section class="sc-newitem">
+                <h3 class="headline-sm">이달의 신상</h3>
+                <ul class="item-list">
+                    <li class="item-item">
+                        <div class="image-wrap">
+                            <a href=""><img src="./assets/img/index-img/img-best-03.jpg" alt="[1+1] 에어쿨링 지니 시그니처 레깅스"></a>
+                            <em class="badge">
+                                <a href=""><img src="./assets/img/icon/ic-badge-new.png" alt=""><span class="blind">NEW</span></a>
+                            </em>
+                        </div>
+                        <div class="item-info">
+                            <em class="review">리뷰 23</em>
+                            <a href="" class="title">[1&1] NEW 에어쿨링 샤론 부츠컷 레깅스</a>
+                            <strong class="sale">29%</strong>
+                            <span class="price">69,000원</span>
+                            <span class="cost">98,000원</span>
+                        </div>
+                    </li>
+                    <li class="item-item">
+                        <div class="image-wrap">
+                            <a href=""><img src="./assets/img/index-img/img-best-03.jpg" alt="[1+1] 에어쿨링 지니 시그니처 레깅스"></a>
+                            <em class="badge">
+                                <a href=""><img src="./assets/img/icon/ic-badge-new.png" alt=""><span class="blind">NEW</span></a>
+                            </em>
+                        </div>
+                        <div class="item-info">
+                            <em class="review">리뷰 23</em>
+                            <a href="" class="title">[1&1] NEW 에어쿨링 샤론 부츠컷 레깅스</a>
+                            <strong class="sale">29%</strong>
+                            <span class="price">69,000원</span>
+                            <span class="cost">98,000원</span>
+                        </div>
+                    </li>
+                    <li class="item-item">
+                        <div class="image-wrap">
+                            <a href=""><img src="./assets/img/index-img/img-best-03.jpg" alt="[1+1] 에어쿨링 지니 시그니처 레깅스"></a>
+                            <em class="badge">
+                                <a href=""><img src="./assets/img/icon/ic-badge-new.png" alt=""><span class="blind">NEW</span></a>
+                            </em>
+                        </div>
+                        <div class="item-info">
+                            <em class="review">리뷰 23</em>
+                            <a href="" class="title">[1&1] NEW 에어쿨링 샤론 부츠컷 레깅스</a>
+                            <strong class="sale">29%</strong>
+                            <span class="price">69,000원</span>
+                            <span class="cost">98,000원</span>
+                        </div>
+                    </li>
+                    <li class="item-item">
+                        <div class="image-wrap">
+                            <a href=""><img src="./assets/img/index-img/img-best-03.jpg" alt="[1+1] 에어쿨링 지니 시그니처 레깅스"></a>
+                            <em class="badge">
+                                <a href=""><img src="./assets/img/icon/ic-badge-new.png" alt=""><span class="blind">NEW</span></a>
+                            </em>
+                        </div>
+                        <div class="item-info">
+                            <em class="review">리뷰 23</em>
+                            <a href="" class="title">[1&1] NEW 에어쿨링 샤론 부츠컷 레깅스</a>
+                            <strong class="sale">29%</strong>
+                            <span class="price">69,000원</span>
+                            <span class="cost">98,000원</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn-more">
+                    <a href="">신상 더보기</a>
+                </div>
+            </section>
+
+            <section class="sc-brandstory">
+                <div class="story-wrap">
+                    <h3 class="headline-sm">
+                        애슬레저 1위 안다르, 브랜드 스토리
+                    </h3>
+                    <h2 class="headline">Stretch your<br>story with andar</h2>
+                    <span class="desc">* 애슬레저 1위, 2022 대한민국 패션 품질 대상,<br>스포츠 애슬레저 브랜드 부문</span>
+                    <div class="btn-more">
+                        <span>자세히 보기</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-categoryitem">
+                <h3 class="headline-sm">레깅스</h3>
+                <div class="swiper item-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./assets/img/index-img/img-category-01.jpg" alt>
+                                <em class="review">리뷰 114,338</em>
+                                <span class="title">[1+1] 에어쿨링 지니 시그니처 레깅스</span>
+                                <strong class="sale">50%</strong>
+                                <span class="price">49,000</span>
+                                <span class="cost">98,000원</span>
+                                <div class="btn-more">
+                                    <span>애슬레저 1위</span>
+                                </div>
+                            </a>
+                            <a href="">
+                                <img src="./assets/img/index-img/img-category-01.jpg" alt>
+                                <em class="review">리뷰 114,338</em>
+                                <span class="title">[1+1] 에어쿨링 지니 시그니처 레깅스</span>
+                                <strong class="sale">50%</strong>
+                                <span class="price">49,000</span>
+                                <span class="cost">98,000원</span>
+                                <div class="btn-more">
+                                    <span>애슬레저 1위</span>
+                                </div>
+                            </a>
+                            <a href="">
+                                <img src="./assets/img/index-img/img-category-01.jpg" alt>
+                                <em class="review">리뷰 114,338</em>
+                                <span class="title">[1+1] 에어쿨링 지니 시그니처 레깅스</span>
+                                <strong class="sale">50%</strong>
+                                <span class="price">49,000</span>
+                                <span class="cost">98,000원</span>
+                                <div class="btn-more">
+                                    <span>애슬레저 1위</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- css 완성 후 브라탑,세트 2개 추가 -->
+            </section>
+
+            <section class="sc-service">
+                <h2 class="blind">안다르 멤버십, 전국 백화점 주요 매장 안내</h2>
+                <a href="" class="group-membership">
+                    <h3 class="headline">안다르 멤버십</h3>
+                    <span class="desc">5,000원 쿠폰 지급, 상시 5% 할인<br>등급별 혜택을 놓치지마세요.</span>
+                    <div class="btn-more">자세히 보기</div>
+                </a>
+                <a href="" class="group-store">
+                    <h3 class="headline">전국 백화점 주요 매장 안내</h3>
+                    <span class="desc">애슬레저 1위 안다르를 신세계백화점,<br>롯데백화점, 더현대 서울 등<br>전국 주요 백화점에서 만나보세요!</span>
+                    <div class="btn-more">자세히 보기</div>
+                </a>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <div class="group-brandname">
+                <h2 class="logo"><a href=""><img src="./assets/img/logo/logo-b.svg" alt="안다르"></a></h2>
+                <span>애슬레저 1위, 2022 대한민국 패션품질대상 스포츠 애슬레저 부문</span>
+            </div>
+            <div class="group-customer">
+                <span>고객센터</span>
+                <em class="title">1566-7318</em>
+                <span>평일 AM 09:00 ~ PM 05:30 / 주말, 공휴일 휴무</span>
+                <span>점심 PM 12:00 ~ PM 01:00</span>
+            </div>
+            <div class="group-sns">
+                <a href=""><img src="./assets/img/icon/ic-facebook.png" alt><span class="blind">페이스북 바로가기</span></a>
+                <a href=""><img src="./assets/img/icon/ic-youtube.png" alt><span class="blind">유튜브 바로가기</span></a>
+                <a href=""><img src="./assets/img/icon/ic-instagram.png" alt><span class="blind">인스타그램 바로가기</span></a>
+            </div>
+            <div class="group-corp">
+                <ul class="corp-list">
+                    <li class="corp-item"><a href="">이용약관</a></li>
+                    <li class="corp-item"><a href="">개인정보처리방침</a></li>
+                    <li class="corp-item"><a href="">쇼핑몰 이용안내</a></li>
+                    <li class="corp-item"><a href="">강사회원 신청</a></li>
+                    <li class="corp-item"><a href="">센터회원 신청</a></li>
+                </ul>
+            </div>
+            <address class="group-addr">
+                <ul class="addr-area">
+                    <li>주식회사 안다르</li>
+                    <li>대표이사 : 박효영</li>
+                    <li>사업자등록번호 : 103-88-00990</li>
+                </ul>
+                <ul class="addr-area">
+                    <li>통신판매업신고 : 2021-서울마포-3979</li>
+                    <li>WEBMASTER : 강지연</li>
+                </ul>
+                <ul class="addr-area">
+                    <li>주소 : 03924 서울특별시 마포구 월드컵북로54길 25(상암동) 11층(S-City)</li>
+                </ul>
+                <ul class="addr-area">
+                    <li>TEL : 1566-7318</li>
+                    <li>호스팅제공자 : 카페24(주)</li>
+                </ul>
+                <ul class="addr-area">
+                    <li>이용문의 : help@andar.co.kr</li>
+                </ul>
+                <ul class="addr-area">
+                    <li>마케팅제휴 문의 : partnership@andar.co.kr</li>
+                </ul>
+                <ul class="addr-area">
+                    <li>해외수출 문의 : overseas@andar.co.kr</li>
+                </ul>
+            </address>
+            <p class="copyright">Copyright by 안다르. all rights reserved.</p>
+            <ul class="logo-list">
+                <li class="logo-item"><a href=""><img src="./assets/img/icon/ic-ptc.png" alt><span class="blind">공정거래위원회 바로가기</span></a></li>
+                <li class="logo-item"><a href="" class="symentic"><img src="./assets/img/icon/ic-symantec.png" alt><span class="blind">시멘틱태그 마크</span></a></li>
+                <li class="logo-item"><a href="" class="kg"><img src="./assets/img/icon/ic-kg.png" alt><span class="blind">이니페이 에스크로 가입 사실확인 바로가기</span></a></li>
+            </ul>
+
+            <!-- 오른쪽 하단 고정 버튼 -->
+            <!-- <div class="fix-btn">
+                <a href="" class="btn kakaotalk">
+                    <img src="./assets/img/icon/ic-kakao-talk.png" alt>
+                    <span class="blind">카카오톡 상담 바로가기</span>
+                </a>
+                <a href="#header" class="btn top" id="btnTop">
+                    <img src="./assets/img/icon/ic-top.png" alt>
+                    <span class="blind">상단으로 이동</span>
+                </a>
+            </div> -->
+        </footer>
+
+
+
+    </div> <!-- wrapper 끝태그 -->
+    
+</body>
+</html>

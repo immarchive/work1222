@@ -1,0 +1,763 @@
+
+/* 사이드메뉴 */
+.side-menu{
+    position: fixed;
+    padding: 0 16px;
+    width: 81.94%;
+    background: #fff;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s ease;
+    visibility: visible;
+    z-index: 10000;
+    height: 100%;
+    overflow: auto;
+}
+.side-menu.on{
+    left: 0;
+}
+.side-menu .membership-area{
+    border-bottom: 1px solid #ddd;
+    padding: 32px 0 30px;
+    position: relative;
+}
+.side-menu .membership-area .btn-close{
+    background: url(../img/icon/ic-btn-close.png) no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background-size: 100% auto;
+    content: '';
+    margin-top: 37px;
+}
+.side-menu .membership-area .btn{
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: auto;
+    height: auto;
+    padding: 10px 26px;
+    font-size: 13px;
+    line-height: 15px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+.side-menu .membership-area .btn.login{
+    background: #0e0e0e;
+    color: #fff;
+}
+.side-menu .membership-area .btn.join{
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    margin-left: 1px;
+}
+.side-menu .membership-area p{
+    font-size: 13px;
+    padding-top: 15px;
+    color: #777;
+}
+.side-menu .membership-area strong{
+    font-weight: bold;
+}
+
+.side-menu .menu-area{
+    padding: 18px 0 11px;
+}
+.side-menu .menu-area .menu-list .menu-item{
+    position: relative;
+    
+}
+.side-menu .menu-area .menu-list .menu-item a{
+    display: block;
+    padding: 15px 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Gilroy-ExtraBold','NotoSansKR',Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+    font-weight: bold;
+}
+.side-menu .menu-area .menu-list .menu-item .item span{
+    position: relative;
+}
+.side-menu .menu-area .menu-list .point span::after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #EE5728;
+    border-radius: 50%;
+    top: 0px;
+    right: -10px;
+}
+.side-menu .menu-area .menu-list .menu-item .sub-list{
+    display: none;
+}
+.side-menu .menu-area .menu-list .menu-item .sub-list a{
+    display: block;
+    padding: 11px 0;
+    color: #848484;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.5px;
+}
+.side-menu .menu-area .menu-list .btn-open{
+    background: url(../img/icon/ic-btn-sideopen.png) no-repeat center;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30px;
+    height: 28px;
+    transform: rotate(0deg);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-origin: center center;
+}
+.side-menu .menu-area .menu-list .btn-open.on{
+    background: url(../img/icon/ic-btn-sideopen.png) no-repeat center;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30px;
+    height: 28px;
+    transform: rotate(180deg);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-origin: center center;
+}
+
+
+
+
+.side-menu .service-area{
+    border-top: 1px solid #ddd;
+    padding: 18px 0 11px;
+}
+.side-menu .service-area .service-list .btn-open{
+    background: url(../img/icon/ic-btn-sideopen.png) no-repeat center;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30px;
+    height: 28px;
+}
+.side-menu .service-area .service-item{
+    position: relative;
+}
+.side-menu .service-area .service-list .service-item a{
+    display: block;
+    padding: 15px 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Gilroy-ExtraBold','NotoSansKR', Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+    font-weight: bold;
+}
+.side-menu .service-area .service-list .service-item .sub-list{
+    display: none;
+}
+.side-menu .service-area .service-list .service-item .sub-list a{
+    display: block;
+    padding: 11px 0;
+    color: #848484;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.5px;
+}
+.side-menu .service-area .service-list .btn-open{
+    background: url(../img/icon/ic-btn-sideopen.png) no-repeat center;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30px;
+    height: 28px;
+    transform: rotate(180deg);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-origin: center center;
+}
+.side-menu .service-area .service-list .btn-open.on{
+    background: url(../img/icon/ic-btn-sideopen.png) no-repeat center;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30px;
+    height: 28px;
+    transform: rotate(0deg);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-origin: center center;
+}
+
+.side-menu .event-area{
+}
+.side-menu .event-area .headline{
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: #333;
+    font-weight: 500;
+    padding: 20px 0 16px;
+    border-top: 1px solid #ddd;
+}
+.side-menu .event-area .item-box{
+    margin: 0 0 30px;
+}
+.side-menu .event-area .item-box a{
+}
+.side-menu .event-area .item-box img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.side-menu .event-area .item-box .title{
+    margin: 12px 0 6px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #222;
+    display: block;
+    font-weight: bold;
+}
+.side-menu .event-area .item-box .desc{
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #777;
+}
+.side-menu .event-area .item-box .all{
+    position: absolute;
+    right: 0;
+    margin-right: 16px;
+    margin-top: -26px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #777;
+}
+
+.side-menu .event-area .brand-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+.side-menu .event-area .brand-box a{
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 50%;
+    background: #F2F2F2;
+    padding: 14px 0;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #777;
+}
+.side-menu .event-area .brand-box a+a::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 1px;
+    height: 16px;
+    background: #CCC;
+    z-index: 1;
+}
+
+
+
+
+
+
+.sc-bestitem{
+}
+.sc-bestitem .headline-sm{
+    padding: 50px 16px 22px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #333;
+    letter-spacing: -0.05em;
+    font-family: 'Gilroy-ExtraBold','NotoSansKR',Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+}
+.sc-bestitem .bestitem-list{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.sc-bestitem .bestitem-list .bestitem-item{
+    padding-bottom: 30px;
+    width: calc((100% - 20px) / 2);
+}
+.sc-bestitem .bestitem-list .bestitem-item a img{
+    width: 100%;
+}
+.sc-bestitem .bestitem-list .bestitem-item .image-wrap{
+    position: relative;
+}
+.sc-bestitem .bestitem-list .bestitem-item .badge{
+}
+.sc-bestitem .bestitem-list .bestitem-item .badge img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: auto;
+    min-width: 40px;
+}
+
+.sc-bestitem .bestitem-list .bestitem-item .item-info{
+    padding: 15px 5% 0;
+}
+.sc-bestitem .bestitem-list .bestitem-item .item-info .review{
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+    color: #8e1f29;
+    display: block;
+    font-weight: bold;
+    font-family: 'Gilroy-ExtraBold','NotoSansKR',Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+}
+.sc-bestitem .bestitem-list .bestitem-item .item-info .title{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    color: #333 !important;
+    font-size: 14px;
+    line-height: 17px;
+    display: block;
+    
+}
+.sc-bestitem .bestitem-list .bestitem-item .item-info .sale{
+    color: #8E1F29;
+    margin-right: 5px;
+    vertical-align: top;
+    font-family: 'Gilroy-ExtraBold','NotoSansKR',Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+}
+.sc-bestitem .bestitem-list .bestitem-item .item-info .price{
+    color: #333 !important;
+    padding: 0;
+    font-size: 15px !important;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    vertical-align: top;
+}
+.sc-bestitem .bestitem-list .bestitem-item .item-info .cost{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #8d8d8d;
+    margin-left: 5px;
+    vertical-align: top;
+    text-decoration-line: line-through;
+}
+.sc-bestitem .bestitem-list .bestitem-item .item-ranking{
+    display: inline-block;
+    border: 1px solid rgba(142,31,41,0.5);
+    padding: 5px 6px;
+    margin: 20px 5% 0;
+    color: #8e1f28;
+    font-size: 9px;
+    line-height: 9px;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+}
+
+.sc-bestitem .btn-more{
+    padding: 0 38px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    margin-top: 40px;
+}
+.sc-bestitem .btn-more a{
+    display: block;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 15px;
+    color: #222;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sc-bestitem .btn-more a::after{
+    content: '';
+    background: url(../img/icon/ic-btn-go.png) no-repeat center / cover;
+    background-size: contain;
+    padding-left: 5px;
+    vertical-align: text-bottom;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+}
+
+
+
+.sc-event-banner{
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto 80px;
+}
+
+
+
+.sc-recomm{}
+.sc-recomm .group-title{
+    padding: 20px 16px 20px;
+    box-sizing: border-box;
+}
+.sc-recomm .main-img img{
+    max-width: 100%;
+    width: 100%;
+    padding-top: 40px;
+}
+.sc-recomm .group-title .headline{
+    font-size: 26px;
+    line-height: 35px;
+    color: #333;
+    letter-spacing: -0.05em;
+    font-weight: bold;
+    font-family: 'Gilroy-ExtraBold','NotoSansKR',Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+}
+.sc-recomm .group-title .desc{
+    padding: 14px 0 28px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+    color: #333;
+    font-weight: 400;
+    display: block;
+}
+.sc-recomm .group-title .btn-more{
+    display: inline-block;
+    background-color: #1e1e1e;
+    border-radius: 2px;
+    border: 1px solid #1e1e1e;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 8px 47px 8px 18px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    background-image: url(../img/icon/ic-btn-more.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: calc(100% - 18px) center;
+}
+
+.sc-recomm .group-list{}
+.sc-recomm .group-list .recomm-list{
+    padding: 0 16px;
+}
+.sc-recomm .group-list .recomm-list .recomm-item{
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    gap: 28px;
+}
+.sc-recomm .group-list .recomm-list .recomm-item+.recomm-item{
+    border-top: 1px solid #eee;
+}
+.sc-recomm .group-list .recomm-list .recomm-item img{
+    max-width: 110px;
+    margin: 0;
+}
+.sc-recomm .group-list .recomm-list .recomm-item .review{
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    line-height: 13px;
+    color: #8e1f29;
+    font-weight: bold;
+    font-family: 'Gilroy-ExtraBold','NotoSansKR',Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+}
+.sc-recomm .group-list .recomm-list .recomm-item .title{
+    width: 100%;
+    padding: 10px 0;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    display: block;
+    color: #333;
+    font-size: 14px;
+    line-height: 17px;
+}
+.sc-recomm .group-list .recomm-list .recomm-item .sale{
+    color: #8E1F29;
+    font-weight: 500;
+    margin-right: 5px;
+    font-family: 'Gilroy-ExtraBold','NotoSansKR',Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+}
+.sc-recomm .group-list .recomm-list .recomm-item .price{
+    color: #333;
+    padding: 0;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+.sc-recomm .group-list .recomm-list .recomm-item .cost{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #8d8d8d;
+    margin-left: 5px;
+    text-decoration-line: line-through;
+}
+.sc-recomm .group-list .recomm-list .recomm-item .ranking{
+    display: inline-block;
+    border: 1px solid rgba(142,31,41,0.5);
+    padding: 2px 6px 5px;
+    margin: 20px 0 5px;
+}
+.sc-recomm .group-list .recomm-list .recomm-item .ranking span{
+    font-size: 9px;
+    line-height: 9px;
+    letter-spacing: -0.05em;
+    color: #8e1f28;
+}
+
+
+
+.sc-newitem{}
+.sc-newitem .headline-sm{
+    padding: 50px 16px 22px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #333;
+    letter-spacing: -0.05em;
+    font-family: 'Gilroy-ExtraBold','NotoSansKR',Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+    font-weight: bold;
+}
+.sc-newitem .item-list{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.sc-newitem .item-list .item-item{
+    padding-bottom: 30px;
+    width: calc((100% - 20px) / 2);
+}
+.sc-newitem .item-list .item-item a img{
+    width: 100%;
+}
+.sc-newitem .item-list .item-item .image-wrap{
+    position: relative;
+}
+.sc-newitem .item-list .item-item .badge img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: auto;
+    min-width: 40px;
+}
+
+.sc-newitem .item-list .item-item .item-info{
+    padding: 15px 5% 0;
+}
+.sc-newitem .item-list .item-item .item-info .review{
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+    color: #8e1f29;
+    display: block;
+    font-weight: bold;
+    font-family: 'Gilroy-ExtraBold','NotoSansKR',Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+}
+.sc-newitem .item-list .item-item .item-info .title{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    color: #333 !important;
+    font-size: 14px;
+    line-height: 17px;
+    display: block;
+    
+}
+.sc-newitem .item-list .item-item .item-info .sale{
+    color: #8E1F29;
+    margin-right: 5px;
+    vertical-align: top;
+    font-family: 'Gilroy-ExtraBold','NotoSansKR',Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+}
+.sc-newitem .item-list .item-item .item-info .price{
+    color: #333 !important;
+    padding: 0;
+    font-size: 15px !important;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    vertical-align: top;
+}
+.sc-newitem .item-list .item-item .item-info .cost{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #8d8d8d;
+    margin-left: 5px;
+    vertical-align: top;
+    text-decoration-line: line-through;
+}
+.sc-newitem .item-list .item-item .item-ranking{
+    display: inline-block;
+    border: 1px solid rgba(142,31,41,0.5);
+    padding: 5px 6px;
+    margin: 20px 5% 0;
+    color: #8e1f28;
+    font-size: 9px;
+    line-height: 9px;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+}
+
+.sc-newitem .btn-more{
+    padding: 0 38px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    margin-top: 40px;
+}
+.sc-newitem .btn-more a{
+    display: block;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 15px;
+    color: #222;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sc-newitem .btn-more a::after{
+    content: '';
+    background: url(../img/icon/ic-btn-go.png) no-repeat center / cover;
+    background-size: contain;
+    padding-left: 5px;
+    vertical-align: text-bottom;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+}
+
+
+
+.sc-brandstory{
+    padding: 20px 0;
+}
+.sc-brandstory .story-wrap{
+    padding: 56px 20px;
+    background-color: #C86733;
+}
+.sc-brandstory .headline-sm{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    margin: 0 auto 10px;
+    font-weight: 400;
+    display: inline-block;
+    border-bottom: 1.5px solid #fff;
+    padding-bottom: 5px;
+    line-height: 1.2;
+}
+.sc-brandstory .headline{
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    color: #fff;
+    font-family: 'Gilroy-ExtraBold','NotoSansKR',Malgun Gothic,'맑은 고딕',Dotum,'돋움',sans-serif;
+}
+.sc-brandstory .desc{
+    padding: 10px 0 5px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #fff;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    display: block;
+}
+.sc-brandstory .btn-more{
+    display: inline-block;
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.03em;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.sc-brandstory .btn-more span{}
+
+
+
+
+.sc-service{
+    padding-top: 70px;
+}
+.sc-service .group-membership{
+    display: block;
+    padding: 65px 20px;
+    box-sizing: border-box;
+    background: url(../img/index-img/img-membership-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sc-service .group-store{
+    display: block;
+    margin: 10px auto 0;
+    padding: 80px 20px 74px;
+    box-sizing: border-box;
+    background: url(../img/index-img/img-shop-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sc-service .headline{
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+.sc-service .desc{
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #fff;
+    padding: 15px 0 30px;
+    box-sizing: border-box;
+    display: block;
+}
+.sc-service .btn-more{
+    border: 1px solid #fff;
+    padding: 7px 25px 8px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    display: inline-block;
+}
